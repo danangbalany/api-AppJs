@@ -3,7 +3,7 @@ const cors = require("cors")
 
 const app = express()
 const router = express.Router()
-
+const PORT = process.env.PORT || 8004
 app.use(express.json())
 app.use(cors())
 
@@ -35,6 +35,6 @@ app.use('/api/v1', router)
 //   res.send({ msg: "Deleted" });
 // });
 
-app.listen(8004, () => console.log("8004"));
+app.listen(PORT, () => console.log("8004"));
 
 module.exports = app
