@@ -1,0 +1,28 @@
+{
+  "name": "api-appjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-router": "^0.0.1",
+    "firebase": "^8.6.8",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danangbalany/api-AppJs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danangbalany/api-AppJs/issues"
+  },
+  "homepage": "https://github.com/danangbalany/api-AppJs#readme"
+}
