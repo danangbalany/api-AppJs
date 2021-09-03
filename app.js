@@ -15,20 +15,6 @@ router.use('/auth', authRoutes)
 
 app.use('/api/v1', router)
 
-// app.get("/", async (req, res) => {
-//   const user = await User.get();
-//   const list = user.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-//   res.send(list);
-// });
-
-// app.post("/update", async (req, res) => {
-//   const id = req.body.id;
-//   delete req.body.id;
-//   const data = req.body;
-//   await User.doc(id).update(data);
-//   res.send({ msg: "Updated" });
-// });
-
 // app.post("/delete", async (req, res) => {
 //   const id = req.body.id;
 //   await User.doc(id).delete();

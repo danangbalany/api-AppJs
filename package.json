@@ -8,6 +8,7 @@
     "express": "^4.17.1",
     "express-router": "^0.0.1",
     "firebase": "^8.6.8",
+    "firebase-admin": "^9.11.1",
     "nodemon": "^2.0.7"
   },
   "scripts": {
