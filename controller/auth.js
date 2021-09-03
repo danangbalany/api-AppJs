@@ -1,7 +1,7 @@
 const asyncHandler = require('../middleware/asyncHandler')
 const admin = require('../src/models/admin')
 const firebase = require("firebase")
-
+const User = require('../src/models/user')
 
 firebase.default.auth().onAuthStateChanged(user => {
   if (user) {
@@ -21,6 +21,10 @@ exports.register = asyncHandler(async(req, res, next) => {
     disable: false
   })
     .then(cred => {
+      return User.doc(cred.uid).set({
+        data
+      })
+      user.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
       // console.log('Successfully created new user:', cred);
     })
   res.send({ message: "Register Success" });
