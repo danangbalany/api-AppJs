@@ -24,7 +24,7 @@ exports.register = asyncHandler(async(req, res, next) => {
       return User.doc(cred.uid).set({
         data
       })
-      user.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+      // user.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
       // console.log('Successfully created new user:', cred);
     })
   res.send({ message: "Register Success" });
